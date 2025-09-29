@@ -1,0 +1,34 @@
+<div class="login-contenedor">
+
+        <div class="login-imagen">
+                <img src="src/assets/login-foto.jpg" alt="imagen-login">
+        </div>
+
+        <!-- Formulario derecha -->
+        <div class="login-ingreso">
+                <h2>Bienvenido</h2>
+                <p>Ingrese su email y contraseña</p>
+
+                <input class="input-datos" [(ngModel)]="emailIngresado" type="email" placeholder="Email" />
+                <input class="input-datos" [(ngModel)]="claveIngresada" type="password" placeholder="Contraseña" />
+                <button class="btn-principal" (click)="iniciarSesion()">Iniciar Sesión</button>
+
+                <p *ngIf="ingresoCorrecto === false" class="error-ingreso">
+                        ❌ Email o contraseña incorrectos.
+                </p>
+                <br>
+
+                <hr />
+
+                <h4 class="acceso-rapido">Accesos rápidos</h4>
+                <button class="btn-secundario" (click)="autocompletarDatosUsuarios('martin@gmail.com','123')">Alumno
+                        Martín</button>
+                <button class="btn-secundario" (click)="autocompletarDatosUsuarios('pepe','456')">Cliente Pepe</button>
+                <!-- <button mat-raised-button class="btn-secundario" (click)="autocompletarDatosUsuarios('pepe','456')">Cliente Pepe</button> -->
+                <hr />
+
+                <p>¿Es nuevo? Regístrese</p>
+                <button class="btn-registro" (click)="redirigirRegistro()">Registrarse</button>
+        </div>
+
+</div>

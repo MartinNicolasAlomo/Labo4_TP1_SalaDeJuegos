@@ -1,0 +1,76 @@
+<!-- 
+<div class="home-container">
+    <h1>Bienvenido {{ usuario?.email }}</h1>
+
+    <div>
+        <div *ngIf="usuario; else noLogueado">
+
+            <p>Usuario conectado: {{ usuario.email }}</p>
+            <button (click)="logout()">Cerrar sesión</button>
+
+            <h2>Juegos</h2>
+            <ul>
+                <li><a routerLink="/ahorcado">Ahorcado</a></li>
+                <li><a routerLink="/mayor-menor">Mayor o Menor</a></li>
+                <li><a routerLink="/otro-juego">Otro juego</a></li>
+            </ul>
+
+        </div>
+
+        <ng-template #noLogueado>
+            <button routerLink="/login">Login</button>
+            <button routerLink="/registro">Registro</button>
+        </ng-template>
+    </div>
+</div>
+-->
+
+
+
+<!-- 
+<div class="home-container">
+
+
+    <div class="navbar">
+        <a routerLink="/inicio" [routerLinkActive]="['active']">Inicio</a>
+        <a routerLink="/juegos" routerLinkActive="active">Juegos</a>
+        <a routerLink="/resultados" routerLinkActive="active">Resultados</a>
+        <a routerLink="/chat" routerLinkActive="active">Chat</a>
+    </div>
+
+
+
+
+    <h1>Bienvenido</h1>
+        <a routerLink="/login" routerLinkActive="active">Cerrar Sesión</a>
+
+
+        
+    <div *ngIf="true; else visitante">
+        <p>Usuario conectado: {{ usuario.emailRegistrado }}</p>
+        <button (click)="logout()">Cerrar sesión</button>
+
+        <h2>Juegos</h2>
+        <ul>
+            <li><a routerLink="/ahorcado">Ahorcado</a></li>
+            <li><a routerLink="/mayor-menor">Mayor o Menor</a></li>
+            <li><a routerLink="/otro-juego">Otro juego</a></li>
+        </ul>
+    </div>
+
+    <ng-template #visitante>
+        <p>Podés ver los juegos, pero necesitás registrarte o iniciar sesión para jugarlos.</p>
+
+        <h2>Juegos disponibles</h2>
+        <ul>
+            <li>Ahorcado</li>
+            <li>Mayor o Menor</li>
+            <li>Otro juego</li>
+        </ul>
+
+        <button routerLink="/login">Login</button>
+        <button routerLink="/registro">Registro</button>
+    </ng-template>
+</div> -->
+
+<app-barra-navegadora></app-barra-navegadora>

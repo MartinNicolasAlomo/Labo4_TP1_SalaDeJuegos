@@ -1,0 +1,75 @@
+.registro-contenedor {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Columna izquierda */
+.registro-imagen {
+    flex: 1.4;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro-imagen img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    color: white;
+}
+
+/* Columna derecha */
+.registro-ingreso {
+    flex: 0.6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f9f9f9;
+    align-items: center;
+}
+
+.registro-ingreso h2 {
+    margin-bottom: 10px;
+}
+
+.registro-ingreso input {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.btn-registro {
+    width: 190px;
+    margin-top: 15px;
+    padding: 12px;
+    background: #5a4fe4;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-registro:hover {
+    background: #483cd4;
+}
+
+
+hr {
+    width: 440px;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.error-ingreso {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

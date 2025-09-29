@@ -1,0 +1,38 @@
+<div class="registro-container">
+
+    <!-- @if(registroCorrecto === null){
+    }
+    @else{
+    @if(registroCorrecto === true){
+    <p>Bienvenido</p>
+    <app-inicio></app-inicio>
+    }
+    @else{
+    <p>acceeso denegado</p>
+    }
+    } -->
+</div>
+
+
+<div class="registro-contenedor">
+
+    <div class="registro-imagen">
+        <img src="src/assets/registro-foto.jpg" alt="imagen-registro">
+    </div>
+
+    <!-- Formulario derecha -->
+    <div class="registro-ingreso">
+        <h2>Registro - Crear una cuenta nueva</h2>
+        <p>Ingrese su email y contraseña</p>
+
+        <input class="input-datos" [(ngModel)]="email" type="usuario" placeholder="Nombre de Usuario" />
+        <input class="input-datos" [(ngModel)]="email" type="email" placeholder="Email" />
+        <input class="input-datos" [(ngModel)]="password" type="password" placeholder="Contraseña" />
+        <button class="btn-registro" (click)="registrar()">Crear Cuenta Nueva</button>
+
+        <p *ngIf="ingresoCorrecto === false" class="error-ingreso">
+            ❌ Email o contraseña incorrectos.
+        </p>
+
+    </div>
+</div>

@@ -1,0 +1,82 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #333;
+  z-index: 1000;
+}
+
+.navbar a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+
+}
+
+
+.navbar a:hover {
+  transform: scale(1.1); /* Agranda sin romper la grilla */
+}
+
+.navbar .icono-menu {
+  font-size: 20px;
+  display: block;
+}
+
+.navbar .etiqueta-menu {
+  font-size: 12px;
+}
+
+.navbar a.active {
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
+.navbar a.active.inicio {
+  color: dodgerblue; 
+  background-color: rgb(97, 139, 255);
+}
+
+.navbar a.active.juegos {
+  color: rgb(255, 115, 0);  /* tomato */
+  background-color: orange;
+}
+
+
+.navbar a.active.resultados {
+  color: gold;
+    background-color: rgb(255, 235, 124);
+    
+  }
+  
+  .navbar a.active.chat {
+    color: limegreen;
+    background-color: rgb(161, 255, 124);
+  }
+  
+  .navbar a.active.encuestas {
+    color: blueviolet;
+    background-color: rgb(203, 124, 255);
+  }
+
+    .navbar a.active.quien-soy {
+    color: rgb(43, 226, 211);
+    background-color: rgb(133, 255, 245);
+  }
+  
+  .navbar a.cerrar {
+    color: red;
+}

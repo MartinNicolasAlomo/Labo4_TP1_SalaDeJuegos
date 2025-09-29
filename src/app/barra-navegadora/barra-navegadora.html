@@ -1,0 +1,38 @@
+
+
+<nav class="navbar">
+  <a routerLink="/inicio" routerLinkActive="active inicio">
+    <span class="icono-menu">🏠</span>
+    <span class="etiqueta-menu">Inicio</span>
+  </a>
+
+  <a routerLink="/juegos" routerLinkActive="active juegos">
+    <span class="icono-menu">🎮</span>
+    <span class="etiqueta-menu">Juegos</span>
+  </a>
+
+  <a routerLink="/resultados" routerLinkActive="active resultados">
+    <span class="icono-menu">📊</span>
+    <span class="etiqueta-menu">Resultados</span>
+  </a>
+
+  <a routerLink="/chat" routerLinkActive="active chat">
+    <span class="icono-menu">💬</span>
+    <span class="etiqueta-menu">Chat</span>
+  </a>
+
+  <a routerLink="/encuestas" routerLinkActive="active encuestas">
+    <span class="icono-menu">📋</span>
+    <span class="etiqueta-menu">Encuestas</span>
+  </a>
+
+    <a routerLink="/quien-soy" routerLinkActive="active quien-soy">
+    <span class="icono-menu">❔</span>
+    <span class="etiqueta-menu">Sobre Mi</span>
+  </a>
+
+  <a (click)="logout()" class="cerrar">
+    <span class="icono-menu">🚪</span>
+    <span class="etiqueta-menu">Cerrar Sesión</span>
+  </a>
+</nav>
