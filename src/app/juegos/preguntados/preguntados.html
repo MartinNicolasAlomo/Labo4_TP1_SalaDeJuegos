@@ -1,1 +1,50 @@
-<p>preguntados works!</p>
+<!-- <div *ngIf="vidas > 0" class="juego">
+  <h2>¿Qué personaje es el de la imagen?</h2>
+
+  <img [src]="pokemonImagen" alt="Pokemon" class="pokemon-img">
+
+  <div class="opciones">
+    <button *ngFor="let opcion of opciones" (click)="responder(opcion)">
+      {{ opcion | titlecase }}
+    </button>
+  </div>
+
+  <p>Puntos: {{ puntos }}</p>
+  <p>Vidas: {{ vidas }}</p>
+</div>
+
+<div *ngIf="vidas === 0">
+  <h2>Juego terminado</h2>
+  <p>Puntaje final: {{ puntos }}</p>
+  <button (click)="vidas=5; puntos=0; nuevaPregunta()">Reintentar</button>
+</div> -->
+
+
+
+
+<!-- 
+<div class="preguntados-container" *ngIf="vidas > 0 && indice < preguntas.length; else finDelJuego">
+
+  <h2>¿Qué personaje es el de la imagen?</h2>
+
+  <div class="vidas">
+    <span *ngFor="let v of [].constructor(vidas)">❤️</span>
+  </div>
+
+  <div class="puntos">Puntos: {{ puntos }}</div>
+
+  <img [src]="preguntaActual.imagen" alt="pokemon" class="pokemon-img">
+
+  <div class="opciones">
+    <button *ngFor="let opcion of preguntaActual.opciones" (click)="responder(opcion)">
+      {{ opcion | titlecase }}
+    </button>
+  </div>
+
+  <div class="mensaje">{{ mensaje }}</div>
+</div>
+
+<ng-template #finDelJuego>
+  <h2>{{ mensaje }}</h2>
+  <p>Puntaje final: {{ puntos }}</p>
+</ng-template> -->
