@@ -1,3 +1,64 @@
+<h1>BIENVENIDO A LA SECCIN DE JUEGOS</h1>>
+
+<div class="contenedor-juegos">
+    
+    <a class="carta-juego" routerLink="ahorcado">
+        <span class="icono-menu">🔤</span>
+        <span class="etiqueta-menu">Ahorcado</span>
+    </a>
+
+    <a class="carta-juego" routerLink="mayor-menor">
+        <span class="icono-menu">🔼🔽</span>
+        <span class="etiqueta-menu">Mayor o Menor</span>
+    </a>
+
+    <a class="carta-juego" routerLink="preguntados">
+        <span class="icono-menu">❓</span>
+        <span class="etiqueta-menu">Preguntados</span>
+    </a>
+
+    <a class="carta-juego" routerLink="buscaminas">
+        <span class="icono-menu">💣</span>
+        <span class="etiqueta-menu">Buscaminas</span>
+    </a>
+</div>
+
+<router-outlet></router-outlet>
+<app-barra-navegadora></app-barra-navegadora>
+
+
+
+<!-- 
+<h1 *ngIf="!router.url.includes('/juegos/') || router.url.endsWith('/juegos')">
+  BIENVENIDO A LA SECCIÓN DE JUEGOS
+</h1>
+
+<div *ngIf="router.url.endsWith('/juegos')" class="contenedor-juegos">
+  <a class="carta-juego" routerLink="ahorcado">
+    <span class="icono-menu">🔤</span>
+    <span class="etiqueta-menu">Ahorcado</span>
+  </a>
+
+  <a class="carta-juego" routerLink="mayor-menor">
+    <span class="icono-menu">🔼🔽</span>
+    <span class="etiqueta-menu">Mayor o Menor</span>
+  </a>
+
+  <a class="carta-juego" routerLink="preguntados">
+    <span class="icono-menu">❓</span>
+    <span class="etiqueta-menu">Preguntados</span>
+  </a>
+
+  <a class="carta-juego" routerLink="batalla-naval">
+    <span class="icono-menu">🚢</span>
+    <span class="etiqueta-menu">Batalla Naval</span>
+  </a>
+</div>
+
+<router-outlet *ngIf="!router.url.endsWith('/juegos')"></router-outlet>
+
+<app-barra-navegadora></app-barra-navegadora> -->
+
 <!-- 
 <div class="home-container">
     <h1>Bienvenido {{ usuario?.email }}</h1>
@@ -72,5 +133,3 @@
         <button routerLink="/registro">Registro</button>
     </ng-template>
 </div> -->
-
-<app-barra-navegadora></app-barra-navegadora>

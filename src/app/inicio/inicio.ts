@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Router, RouterLink, RouterLinkActive} from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import { BarraNavegadora } from '../barra-navegadora/barra-navegadora';
+import { CommonModule } from '@angular/common';
 
 
 
 @Component({
   selector: 'app-inicio',
-  imports: [FormsModule, RouterLink, RouterLinkActive, BarraNavegadora],
+  imports: [FormsModule, RouterLink, RouterLinkActive, BarraNavegadora, RouterOutlet, CommonModule],
+
   templateUrl: './inicio.html',
   styleUrl: './inicio.css'
 })

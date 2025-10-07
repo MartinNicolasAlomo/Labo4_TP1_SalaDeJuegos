@@ -15,6 +15,11 @@ import { Router, RouterModule } from '@angular/router';
 export class BarraNavegadora {
   constructor(private router: Router) {
   }
+  /*
+  ngOnInit() {
+  const currentUrl = this.router.url;
+  this.visibleSiempre = !currentUrl.startsWith('/juegos/');
+}*/
   logout() {
     //  this.usuario = null;
     //localStorage.removeItem('usuario'); // 🔹 limpio sesión

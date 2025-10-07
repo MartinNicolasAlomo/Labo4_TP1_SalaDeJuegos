@@ -22,13 +22,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 
 .navbar a:hover {
-  transform: scale(1.1); /* Agranda sin romper la grilla */
+  transform: scale(1.1);
+  /* Agranda sin romper la grilla */
 }
 
 .navbar .icono-menu {
@@ -45,38 +45,80 @@
   font-weight: bold;
 }
 
+
+
 .navbar a.active.inicio {
-  color: dodgerblue; 
-  background-color: rgb(97, 139, 255);
+  color: #01436e;
+  background-color: #7ccfff;
 }
 
+
 .navbar a.active.juegos {
-  color: rgb(255, 115, 0);  /* tomato */
-  background-color: orange;
+  color: #803300;
+  background-color: #ffa500;
 }
+
 
 
 .navbar a.active.resultados {
-  color: gold;
-    background-color: rgb(255, 235, 124);
-    
-  }
-  
-  .navbar a.active.chat {
-    color: limegreen;
-    background-color: rgb(161, 255, 124);
-  }
-  
-  .navbar a.active.encuestas {
-    color: blueviolet;
-    background-color: rgb(203, 124, 255);
-  }
+  color: #685800;
+  background-color: #ffeb7c;
+}
 
-    .navbar a.active.quien-soy {
-    color: rgb(43, 226, 211);
-    background-color: rgb(133, 255, 245);
-  }
-  
-  .navbar a.cerrar {
-    color: red;
+
+.navbar a.active.chat {
+  color: #3c752b;
+  background-color: #a1ff7c;
+}
+
+
+
+.navbar a.active.encuestas {
+  color: #522772;
+  background-color: #cd83ff;
+}
+
+
+
+.navbar a.active.quien-soy {
+  color: #006d60;
+  background-color: #7cfff5;
+}
+
+
+
+.navbar a.cerrar {
+  color: red;
+}
+
+.navbar a.active.inicio .icono-foto {
+  filter: invert(18%) sepia(97%) saturate(1632%) hue-rotate(185deg) brightness(92%) contrast(95%);
+}
+.navbar a.active.juegos .icono-foto {
+  filter: invert(25%) sepia(89%) saturate(2200%) hue-rotate(20deg) brightness(95%) contrast(90%);
+}
+.navbar a.active.resultados .icono-foto {
+  filter: invert(40%) sepia(86%) saturate(800%) hue-rotate(30deg) brightness(90%) contrast(95%);
+}
+.navbar a.active.chat .icono-foto {
+  filter: invert(38%) sepia(50%) saturate(900%) hue-rotate(85deg) brightness(85%) contrast(90%);
+}
+.navbar a.active.encuestas .icono-foto {
+  filter: invert(20%) sepia(80%) saturate(1200%) hue-rotate(270deg) brightness(90%) contrast(95%);
+}
+.navbar a.active.quien-soy .icono-foto {
+  filter: invert(30%) sepia(60%) saturate(1100%) hue-rotate(140deg) brightness(85%) contrast(95%);
+}
+
+:host {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform: translateY(100%); /* Oculta fuera de pantalla */
+}
+
+:host(:hover) {
+  transform: translateY(0); /* Muestra al hacer hover */
 }

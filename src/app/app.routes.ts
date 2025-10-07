@@ -8,6 +8,10 @@ import { Juegos } from './juegos/juegos';
 import { Resultados } from './resultados/resultados';
 import { Chat } from './chat/chat';
 import { Encuestas } from './encuestas/encuestas';
+import { Ahorcado } from './juegos/ahorcado/ahorcado';
+import { MayorMenor } from './juegos/mayor-menor/mayor-menor';
+import { Preguntados } from './juegos/preguntados/preguntados';
+import { Buscaminas } from './juegos/buscaminas/buscaminas';
 
 
 export const routes: Routes = [
@@ -26,7 +30,25 @@ export const routes: Routes = [
     },
     {
         path: 'inicio',
-        component: Inicio
+        component: Inicio,
+        children: [
+            {
+                path: 'ahorcado',
+                component: Ahorcado
+            },
+            {
+                path: 'mayor-menor',
+                component: MayorMenor
+            },
+            {
+                path: 'preguntados',
+                component: Preguntados
+            },
+            {
+                path: 'buscaminas',
+                component: Buscaminas
+            },
+        ]
     },
     {
         path: 'juegos',
@@ -50,6 +72,6 @@ export const routes: Routes = [
     },
     {
         path: '**',
-        component: Error404    // Error404     // cualquier ruta inválida → error
+        component: Error404
     }
 ];
